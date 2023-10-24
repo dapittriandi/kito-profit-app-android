@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#E3E2B5"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Harga Beli    :"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/texthargabeli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.33"
+                    android:background="#ededed"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            
+                <requestFocus />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Laba %          :"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/textlaba"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.33"
+                        android:background="#ededed"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <requestFocus />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Harga Jual   :"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/texthargajual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.33"
+                            android:background="#ededed"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <requestFocus />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Laba Bersih :"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/textlababersih"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.33"
+                                android:background="#ededed"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:padding="5dp"
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+
+                            <requestFocus />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+
+                            <Button
+                                android:id="@+id/buttonhitung1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_rounded"
+                                android:text="Hitung"
+                                android:textColor="#fff" />
+
+                            <Button
+                                android:id="@+id/buttonreset2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_rounded"
+                                android:text="Reset"
+                                android:textColor="#fff" />
+                        </LinearLayout>
+
+
+                          <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:layout_weight="1"
+                                android:paddingTop="50dp"
+                                android:padding="5dp"
+                                android:textColor="#5A7077"
+                                android:text="kito-PROFIT merupakan aplikasi untuk menghitung laba bersih berdasarkan presentase yang kita inginkan dari harga beli ,dan juga untuk mengetahui berapa harga jual yang ditetapkan."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textStyle="bold"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="match_parent"
+                                  android:padding="5dp"
+                                  android:layout_marginTop="50dp"
+                                  android:layout_gravity="left"
+                                  android:text="Developer by.Dapit Triandi"
+                                  android:textColor="#9d5353"
+                                  android:textStyle="italic"
+                                  android:textSize="15dp"/>
+
+
+                          </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
